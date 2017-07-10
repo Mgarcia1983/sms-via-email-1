@@ -1,2 +1,2 @@
-web: gunicorn app:app
+web: sh target/bin/webapp
 worker:  bundle exec rake jobs:work
