@@ -1,4 +1,4 @@
-web: gunicorn app:app
+web: gunicorn app.py
 heroku ps:scale web=1
 worker:  bundle exec rake jobs:work
 heroku ps:scale worker=1
