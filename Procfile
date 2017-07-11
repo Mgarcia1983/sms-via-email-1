@@ -1,5 +1,4 @@
-web: gunicorn smstoemailreply
-heroku ps:scale web=1
-worker:  bundle exec rake jobs:work
+web: gunicorn gettingstarted.wsgi --log-file -heroku ps:scale web=1
 heroku ps:scale worker=1
 gem rails_autoscale_agent
+worker
