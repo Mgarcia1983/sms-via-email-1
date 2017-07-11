@@ -1,0 +1,44 @@
+{
+  "name": "sms-via-email-1",
+  "scripts": {
+  },
+  "env": {
+    "CODESHIP_ID": {
+      "required": true
+    },
+    "EMAIL_DOMAIN": {
+      "required": true
+    },
+    "RAILS_AUTOSCALE_URL": {
+      "required": true
+    },
+    "REDIS_URL": {
+      "required": true
+    },
+    "SENDGRID_PASSWORD": {
+      "required": true
+    },
+    "SENDGRID_USERNAME": {
+      "required": true
+    },
+    "TWILIO_ACCOUNT_SID": {
+      "required": true
+    },
+    "TWILIO_AUTH_TOKEN": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "codeship",
+    "heroku-postgresql",
+    "rails-autoscale",
+    "heroku-redis"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
